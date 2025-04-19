@@ -1,0 +1,117 @@
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
+}
+.logo{
+    width: 160px;
+    height: 70px;  
+}
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 18px;
+    align-items: center;
+}
+.nav-connect{
+    font-size: 16px;
+    background: linear-gradient(90deg, #19d5b3, rgb(47, 134, 152));
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.nav-menu li:hover{
+    transform: scale(1.05);
+}
+.nav-menu li.active-li {
+    transform: scale(1.2);
+  }  
+
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu li .active {
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 70px;
+    background-image: url('../../../assets/theme_pattern.png'); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: slide-in 0.3s ease-in-out;
+  }
+  
+  @keyframes slide-in {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @media (max-width: 720px) {
+    .navbar{
+        margin: 0px 10px;
+    }
+    .logo{
+        width: 40px;
+        height: 22px;
+        padding-right: 8px;
+    }
+    .nav-menu{
+        gap: 18px;
+        font-size: 14px;
+    }
+    .nav-menu li .active{
+        width: 50px;
+        height: 40px;
+    }
+    .nav-connect{
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .navbar{
+        margin: 0px 40px;
+    }
+    .logo{
+        width: 80px;
+        height: 50px;
+        padding-right: 20px;
+    }
+    .nav-menu{
+        gap: 40px;
+        font-size: 16px;
+    }
+    .nav-menu li .active{
+        width: 60px;
+        height: 40px;
+    }
+    .nav-connect{
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+  }

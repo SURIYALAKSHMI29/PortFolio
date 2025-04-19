@@ -1,0 +1,38 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(110deg, #4d5555, #1a4a4a, #4d5555);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.footer-icons-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer-icons-left a {
+    transition: transform 0.3s ease;
+}
+
+.footer-icons-left a img{
+    height: 24px;
+    width: 24px;
+}
+
+.footer-icons-left a:hover {
+    transform: scale(1.2);
+}
+
+.footer-right {
+    color: #ffffff;
+    font-size: 12px;
+}

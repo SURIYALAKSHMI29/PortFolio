@@ -1,0 +1,128 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% { opacity: 0.25; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.hero h1 {
+    text-align: center;
+    margin-top: 140px;
+    padding: 50px 0px;
+    font-size: 60px;
+    font-weight: 600;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, #58eacf, rgb(47, 134, 152));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    width: 62%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.hero-action {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-connect {
+    padding: 20px 36px;
+    background: linear-gradient(90deg, #19d5b3, rgb(47, 134, 152));
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-connect:hover {
+    border: 2px solid white;
+}
+
+.hero-resume {
+    padding: 18px 55px;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-resume:hover {
+    border-color: darkcyan;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 50px;
+        width: 90%;
+    }
+    .hero {
+        width: 100%;
+    }
+    .hero p {
+        width: 80%;
+    }
+}
+
+/* Mobile and below */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+        width: 90%;
+        margin-top: 60px; 
+        padding: 30px 0; 
+    }
+
+    .hero {
+        width: 100%;
+        padding: 20px; 
+        margin: 25px 170px;
+        text-align: center;
+    }
+
+    .hero-resume, .hero-connect {
+        padding: 12px 28px;
+        font-size: 16px; 
+        border-width: 1px; 
+    }
+
+    /* For mobile, stack the action buttons vertically */
+    .hero-action {
+        flex-direction: column;
+        gap: 15px; 
+    }
+    .hero p {
+        min-width: 550px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+}
