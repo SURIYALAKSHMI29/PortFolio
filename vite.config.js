@@ -12,5 +12,10 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
+    preview: {
+      host: true,
+      port: 4173,
+      allowedHosts: ['suriya-portfolio.onrender.com'],
+    },
   },
 })
