@@ -15,7 +15,7 @@ export default defineConfig({
     preview: {
       host: true,
       port: 4173,
-      allowedHosts: ['suriya-portfolio.onrender.com'],
+      allowedHosts: ['suriya-portfolio.onrender.com', 'localhost'],
     },
   },
 })
