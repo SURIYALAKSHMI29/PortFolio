@@ -9,10 +9,10 @@ const Footer = ({ className }) => {
                 <a href="https://github.com/SURIYALAKSHMI29" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" alt="GitHub" />
                 </a>
-                <a href="mailto:suriyalakshmi413@gmail.com">
+                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&source=mailto&to=suriyalakshmi413@gmail.com">
                     <img src="https://img.icons8.com/ios-glyphs/30/ffffff/email.png" alt="Email" />
                 </a>
-                <a href="https://www.linkedin.com/in/suriya-lakshmi" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/suriya-lakshmi-m/" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png" alt="LinkedIn" />
                 </a>
             </div>

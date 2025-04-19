@@ -84,14 +84,11 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(220deg, #012020, #035a5a, #013333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #242222;
 }
 
 .exp-bar{
-  color: #000000;
+  color: #ffffff;
 }
 
 .experience-card.active {
@@ -275,7 +272,10 @@
 }
 
 .exp-description strong {
-  color: #11dab5; 
+  background: linear-gradient(220deg, #012020, #024848, #013333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: bold;
 }
 
