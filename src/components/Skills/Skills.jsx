@@ -150,7 +150,7 @@ const Skills = ({ className, style }) => {
                 </div>
                 <div className="stats">
                 <div>
-                    <div className="value">190+</div>
+                    <div className="value">290+</div>
                     <div className="label">Solved</div>
                 </div>
                 <div>
